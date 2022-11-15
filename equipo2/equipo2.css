@@ -1,0 +1,164 @@
+@import url(/navbar.css);
+@import url(/footer.css);
+@import url(/botones.css);
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?2qmh7j');
+  src:  url('fonts/icomoon.eot?2qmh7j#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?2qmh7j') format('truetype'),
+    url('fonts/icomoon.woff?2qmh7j') format('woff'),
+    url('fonts/icomoon.svg?2qmh7j#icomoon') format('svg');
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} 
+.icon-equipo:before {
+  content: "\e905";
+  color: #fff;
+  font-size: 200px;
+}
+.icon-atras:before {
+  content: "\e903";
+  color: #fff;
+  font-size: 200px;
+}
+.icon-adelante:before {
+  content: "\e901";
+  color: #fff;
+  font-size: 200px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#hero{
+    background-image: url(../img/index/slider1.png) ;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.hero-tagline h1{
+    color: #E4E900;
+    font-weight: 400;
+    font-family: 'Dela Gothic One';
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+}
+.hero-tagline p{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #F6F9FC;
+}
+#hero .container .img{
+    width: 581.67px;
+    height: 424.69px;
+}
+.card{
+    border-radius: 25px;
+    background-color: #FFF;
+  }
+  .image-content,
+  .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+  }
+  .image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+  }
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #2069E0;
+    border-radius: 25px 25px 25px 25px;
+  }
+  .card-image{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: #FFF;
+  }
+  .card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    /* border: 4px solid #2069E0; */
+  }
+  .name{
+    font-family: 'Dela Gothic One';
+    font-size: 18px;
+    font-weight: 400;
+    color: #2069E0;
+  }
+  .description{
+    font-family: 'Prompt';
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin: 0px;
+  }
+
+
+html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #F4F4F4;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 70%;
+        height: 85%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .swiper-slide {
+        height: calc((100% - 30px) / 2);
+      }
+      .swiper-button-next, .swiper-button-prev{
+        background-color: #2069E0;
+        border-radius: 100px;
+        width: 50px;
+        height: 50px;
+        color: #F4F4F4;
+
+      }
+      .swiper-button-prev:after, .swiper-button-next:after{
+        font-size: 20px;
+      }
+
+

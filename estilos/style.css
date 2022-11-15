@@ -1,0 +1,453 @@
+@import url(../botones.css);
+@import url(../navbar.css);
+@import url(../testimonios.css);
+@import url(../footer.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?2qmh7j');
+    src:  url('fonts/icomoon.eot?2qmh7j#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?2qmh7j') format('truetype'),
+      url('fonts/icomoon.woff?2qmh7j') format('woff'),
+      url('fonts/icomoon.svg?2qmh7j#icomoon') format('svg');
+  }
+  
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  } 
+.icon-arriba:before {
+    content: "\ee902";
+    color: #2069E0;
+    font-size: 35px;
+}
+body{
+    background-image: url(/img/index/fondo5.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero-section video{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+.hero-section{
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 10% 0;
+}
+.hero-tagline h1{
+    color: #F6F9FC;
+    font-weight: 400;
+    font-family: 'Dela Gothic One';
+    font-size: 36.65px;
+    line-height: 50px;
+}
+.hero-tagline span{
+    color: #F4F900;
+    font-family: 'Dela Gothic One';
+}
+
+/* <!-- datos de revelancia --> */
+/* .datos-items{
+    display: flex;
+    justify-content: center;
+} */
+.item-dato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#datos .item-dato h3{
+    background-color: #2069E0;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28.43px;
+    color: #F6F9FC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#datos .item-dato p{
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: center;
+    color: #2069E0;
+}
+/* que es */
+.que-es-text{
+    margin-top: auto;
+
+}
+.que-es-img img{
+    width: 90%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.que-es-text h4{
+    font-family: 'Dela Gothic One';
+    color: #2069E0;
+    font-size: 28.43px;
+}
+.que-es-text p{
+    font-family: 'Prompt';
+    text-align:justify;
+    font-size: 16px;
+    color: #333333;
+}
+.que-es{
+    margin-top: 5%;
+}
+.linea-que-es{
+    width: 296px;
+    height: 20px;
+    background: #DFDEFD;
+    position: relative;
+    bottom: 15px;
+    left: 20px;
+    z-index: -1;
+}
+/* Convocatorias y equipo */
+
+.cajainicio{
+    background-image: url(/img/index/slider1.png);
+    background-size: cover;
+    height: 100vh;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.equipo .cb{
+    width: 580px;
+    height: 580px;
+    background-image: url(/img/index/equipo.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+.convocatorias .cb{
+    width: 580px;
+    height: 580px;
+    background-image: url(/img/index/convocatorias.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+.cb-title{
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36.65px;
+    line-height: 58px;
+    text-align: center;
+    color: #2069E0;
+}
+.cb-text{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21.33px;
+    line-height: 30px;
+    text-align: center;
+    color: #2069E0;
+}
+.equipo{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+.convocatorias{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+
+
+/* NOTICIAS */
+
+.linea-noticia{
+    width: 680px;
+    height: 20px;
+    background: #DFDEFD;
+    position: relative;
+    bottom: 15px;
+    left: 20px;
+    z-index: -1;
+}
+#noticias-inicio{
+    margin-top: 5%;
+}
+.noticias-item{
+    padding: 0px;
+}
+.container .noticias_header h2{
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 43px;
+    color: #2069E0;
+}
+.container .item-container{
+    /* width: 400px; */
+    border: 4px solid #2069E0;
+    border-radius: 0px 30px 30px 0px;
+    border: double 4px transparent;
+    background-image: linear-gradient(#F6F9FC, #F6F9FC),
+    linear-gradient(#2069E0, #0F98A3);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 0px 0px 14px rgba(96, 123, 221, 0.5);
+}
+.container .item-container img{
+    width: 100%;
+    height: 182px;
+    border-radius: 0px 25px 0 0px;
+    object-fit: cover;
+}
+.container .item-container h4{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21.33px;
+    line-height: 25px;
+    color: #2069E0;
+    margin: 10px 30px 10px 30px ;
+}
+
+.noticias-inicio .noticias-header h2, .eventos-header h2{
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28.43px;
+    line-height: 43px;
+    color: #2069E0;
+}
+/* eventos */
+.linea-eventos{
+    width: 730px;
+    height: 20px;
+    background: #DFDEFD;
+    position: relative;
+    bottom: 15px;
+    left: 20px;
+    z-index: -1;
+}
+#eventos-inicio{
+    margin-top: 5%;
+}
+
+#eventos-inicio .container .eventos-header h2{
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28.43px;
+    line-height: 43px;
+    color: #2069E0;
+}
+
+#eventos-inicio .container .item-eventos .card, .card-3{
+    /* width: 370px; */
+    height: 320px;
+    border: 4px solid #2069E0;
+    border-radius: 30px;
+    border: double 4px transparent;
+    background-image: linear-gradient(#F6F9FC, #F6F9FC),
+    linear-gradient(#2069E0, #0F98A3);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 0px 0px 14px rgba(96, 123, 221, 0.5);
+}
+#eventos-inicio .container .item-eventos .card-header{
+    /* width: 328px; */
+    height: 63px;
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 18px;
+    color: #2069E0;
+    border-radius: 30px 30px 0px 0px;
+    border-bottom: 4px solid #2069E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#eventos-inicio .list-group-item, .card-3 .list-group-item{
+    /* width: 326px; */
+    height: 83px;
+    border-bottom: 4px solid #2069E0;
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 29px;
+    color: #333333;
+    background-color: #F6F9FC;
+}
+#eventos-inicio .list-group-item p, .card-3 .list-group-item p, .list-group-item-3 p{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #616161;
+}
+.list-group-item-3{
+    /* width: 326px; */
+    height: 83px;
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 29px;
+    color: #333333;
+    border-radius: 0 0 30px 30px;
+    padding:8px 16px;
+    list-style: none;
+    background-color: #F6F9FC;
+}
+.list-group-item-3 p{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #616161;
+}
+.list-group-item-3 a, .list-group-item a{
+    text-decoration: none;
+}
+/* contactos */
+.contactos{
+    background-image: url(/img/index/slider1.png);
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+.contactos .blur-caja{
+    width: 100%;
+    height: 90%;
+    background: rgba(246, 249, 252, 0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+.contactos .Bolivia{
+    width: 400px;
+    height: 250px;
+    background: #F6F9FC;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactos .Bolivia .cajita-img img{
+    width: 230px;
+    /* height: 200px; */
+}
+.contactos .cajita .btn-contactos{
+    width: 190px;
+    height: 45px;
+    background:#F6F9FC ;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.contactos .cajita .btn-contactos a{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color:#2069E0;
+    text-decoration: none;
+}
+.contactos .text{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.contactos .cajita{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contactos .text .cajita h4{
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 47px;
+    color: #F6F9FC;
+    text-align: center;
+}
+.contactos .text .cajita p{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #F6F9FC;
+    text-align: center;
+}
+
+
+
+/* HOVERS */
+/* #eventos-inicio .list-group-item:hover{
+    color: #F6F9FC;
+    background-color: #2069E0;
+    transition: all 0.3s ease 0s;
+}
+#eventos-inicio .list-group-item p:hover{
+    color: #F6F9FC;
+} */
